@@ -4,76 +4,112 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lagoon Bar — Yuxin Wang</title>
-  <meta name="description" content="Lagoon Bar: a psychological narrative game. Play the game, watch the trailer, and explore the design process and interview.">
+  <meta name="description" content="Lagoon Bar: a first-person psychological narrative game by Yuxin Wang. Play the demo, watch the trailer, and explore the design process.">
   <meta name="theme-color" content="#000000">
   <link rel="canonical" href="https://estellaning.github.io/portfolio/">
   <meta property="og:title" content="Lagoon Bar — Yuxin Wang">
-  <meta property="og:image" content="https://estellaning.github.io/portfolio/assets/cover.png">
+  <meta property="og:image" content="https://estellaning.github.io/portfolio/assets/og.jpg">
+  <link rel="preload" as="font" type="font/woff2" href="fonts/bebas-neue-400.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/outfit-400.woff2" crossorigin>
   <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
-  <a class="skip-link" href="#game">Skip to project</a>
+  <a class="skip-link" href="#project">Skip to project</a>
+
+  <header class="site" id="top">
+    <a class="name" href="../">Yuxin Wang</a>
+    <nav>
+      <a href="mailto:estellaaaning@gmail.com">estellaaaning@gmail.com</a>
+      <a href="../work.html">All work</a>
+    </nav>
+  </header>
+
   <main>
-    <section class="cover" id="project-top" aria-label="Lagoon Bar">
-      <img class="cover-image" src="assets/cover.png" width="3840" height="2160" fetchpriority="high" alt="The dimly lit interior of Lagoon Bar, with a red neon sign and crime scene tape.">
-      <a class="back" href="../work.html">← All work</a>
+    <section class="cover" aria-label="Lagoon Bar">
+      <img src="assets/cover-1280.webp"
+           srcset="assets/cover-1280.webp 1280w, assets/cover-2560.webp 2560w"
+           sizes="(min-width: 1440px) 1440px, 100vw"
+           width="2560" height="1440" fetchpriority="high" decoding="async"
+           alt="The dimly lit interior of Lagoon Bar, with a red neon sign and crime scene tape.">
     </section>
 
-    <section class="game section" id="game" aria-label="Play Lagoon Bar">
-      <div class="game-image">
-        <img src="assets/download-guide.png" width="1918" height="2588" loading="lazy" decoding="async" alt="Lagoon Bar on itch.io: game description, screenshots and download guide.">
-        <a class="game-link" href="https://lagoon-bar.itch.io/lagoon-bar" target="_blank" rel="noopener">https://lagoon-bar.itch.io/lagoon-bar</a>
+    <section class="wrap intro" id="project">
+      <div class="intro-head">
+        <p class="keywords">Psychological horror · Narrative · Spatial puzzle · First-person</p>
+        <h1>Lagoon Bar</h1>
+        <p class="desc">A first-person psychological narrative game about selective memory and repressed family trauma. The player moves through a looping diner and a domestic suite across three stages of life, piecing together the truth behind a violent homicide.</p>
+
+        <a class="play" href="https://lagoon-bar.itch.io/lagoon-bar" target="_blank" rel="noopener">
+          <span class="play-text">Play the demo</span>
+          <span class="play-sub">itch.io · Windows ↗</span>
+        </a>
+
+        <details class="guide">
+          <summary>How to download</summary>
+          <img src="assets/download-guide.webp" width="1440" height="1943" loading="lazy" decoding="async" alt="Lagoon Bar on itch.io: game description, screenshots and the download button.">
+        </details>
       </div>
+
+      <dl class="facts">
+        <div><dt>Role</dt><dd>Game concept &amp; narrative design, level blockout &amp; playtesting, 3D modelling, environment set dressing, programming</dd></div>
+        <div><dt>Team</dt><dd>Yuxin Wang, Xingyi Shi</dd></div>
+        <div><dt>Duration</dt><dd>Jul – Sep 2026 · 9 weeks, ongoing</dd></div>
+        <div><dt>Engine</dt><dd>Unreal Engine</dd></div>
+      </dl>
     </section>
 
-    <section class="section film" aria-labelledby="trailer-title">
-      <h2 id="trailer-title">Game trailer</h2>
+    <section class="wrap block reveal" aria-labelledby="trailer-title">
+      <h2 id="trailer-title"><span>01</span>Game trailer</h2>
       <video controls playsinline preload="none" poster="assets/trailer-poster.jpg" aria-label="Lagoon Bar promotional video">
         <source src="assets/trailer.mp4" type="video/mp4">
         <a href="assets/trailer.mp4">Watch the game trailer</a>
       </video>
     </section>
 
-    <div class="project-details">
-    <section class="design section" aria-label="Lagoon Bar design portfolio">
-      <a class="board" href="assets/board-01.webp" target="_blank" rel="noopener" aria-label="Open design board 1 at full size">
-        <img src="assets/board-01.webp" width="4096" height="1097" loading="lazy" decoding="async" alt="Lagoon Bar — design process, board 1">
-      </a>
-      <a class="board" href="assets/board-02.webp" target="_blank" rel="noopener" aria-label="Open design board 2 at full size">
-        <img src="assets/board-02.webp" width="4096" height="1097" loading="lazy" decoding="async" alt="Lagoon Bar — design process, board 2">
-      </a>
-      <a class="board" href="assets/board-03.webp" target="_blank" rel="noopener" aria-label="Open design board 3 at full size">
-        <img src="assets/board-03.webp" width="4096" height="1097" loading="lazy" decoding="async" alt="Lagoon Bar — design process, board 3">
-      </a>
-      <a class="board" href="assets/board-05.webp" target="_blank" rel="noopener" aria-label="Open design board 5 at full size">
-        <img src="assets/board-05.webp" width="4096" height="1097" loading="lazy" decoding="async" alt="Lagoon Bar — design process, board 5">
-      </a>
-      <a class="board" href="assets/board-06.webp" target="_blank" rel="noopener" aria-label="Open design board 6 at full size">
-        <img src="assets/board-06.webp" width="4096" height="1097" loading="lazy" decoding="async" alt="Lagoon Bar — design process, board 6">
-      </a>
-      <a class="board" href="assets/board-07.webp" target="_blank" rel="noopener" aria-label="Open design board 7 at full size">
-        <img src="assets/board-07.webp" width="4096" height="1097" loading="lazy" decoding="async" alt="Lagoon Bar — design process, board 7">
-      </a>
-      <a class="board" href="assets/board-08.webp" target="_blank" rel="noopener" aria-label="Open design board 8 at full size">
-        <img src="assets/board-08.webp" width="4096" height="1097" loading="lazy" decoding="async" alt="Lagoon Bar — design process, board 8">
-      </a>
-      <a class="board" href="assets/board-09.webp" target="_blank" rel="noopener" aria-label="Open design board 9 at full size">
-        <img src="assets/board-09.webp" width="4096" height="1097" loading="lazy" decoding="async" alt="Lagoon Bar — design process, board 9">
-      </a>
-      <a class="board" href="assets/board-10.webp" target="_blank" rel="noopener" aria-label="Open design board 10 at full size">
-        <img src="assets/board-10.webp" width="4096" height="1097" loading="lazy" decoding="async" alt="Lagoon Bar — design process, board 10">
-      </a>
+    <section class="wrap block" aria-labelledby="process-title">
+      <h2 id="process-title" class="reveal"><span>02</span>Design process</h2>
+      <div class="boards">
+        <a class="board reveal" href="assets/board-01.webp" target="_blank" rel="noopener" aria-label="Open design board 1 at full size"><img src="assets/board-01-2400.webp" width="2400" height="643" loading="lazy" decoding="async" alt="Lagoon Bar design process, board 1: game information and production timeline"></a>
+        <a class="board reveal" href="assets/board-02.webp" target="_blank" rel="noopener" aria-label="Open design board 2 at full size"><img src="assets/board-02-2400.webp" width="2400" height="643" loading="lazy" decoding="async" alt="Lagoon Bar design process, board 2"></a>
+        <a class="board reveal" href="assets/board-03.webp" target="_blank" rel="noopener" aria-label="Open design board 3 at full size"><img src="assets/board-03-2400.webp" width="2400" height="643" loading="lazy" decoding="async" alt="Lagoon Bar design process, board 3"></a>
+        <a class="board reveal" href="assets/board-05.webp" target="_blank" rel="noopener" aria-label="Open design board 4 at full size"><img src="assets/board-05-2400.webp" width="2400" height="643" loading="lazy" decoding="async" alt="Lagoon Bar design process, board 4"></a>
+        <a class="board reveal" href="assets/board-06.webp" target="_blank" rel="noopener" aria-label="Open design board 5 at full size"><img src="assets/board-06-2400.webp" width="2400" height="643" loading="lazy" decoding="async" alt="Lagoon Bar design process, board 5"></a>
+        <a class="board reveal" href="assets/board-07.webp" target="_blank" rel="noopener" aria-label="Open design board 6 at full size"><img src="assets/board-07-2400.webp" width="2400" height="643" loading="lazy" decoding="async" alt="Lagoon Bar design process, board 6"></a>
+        <a class="board reveal" href="assets/board-08.webp" target="_blank" rel="noopener" aria-label="Open design board 7 at full size"><img src="assets/board-08-2400.webp" width="2400" height="643" loading="lazy" decoding="async" alt="Lagoon Bar design process, board 7"></a>
+        <a class="board reveal" href="assets/board-09.webp" target="_blank" rel="noopener" aria-label="Open design board 8 at full size"><img src="assets/board-09-2400.webp" width="2400" height="643" loading="lazy" decoding="async" alt="Lagoon Bar design process, board 8"></a>
+        <a class="board reveal" href="assets/board-10.webp" target="_blank" rel="noopener" aria-label="Open design board 9 at full size"><img src="assets/board-10-2400.webp" width="2400" height="643" loading="lazy" decoding="async" alt="Lagoon Bar design process, board 9"></a>
+      </div>
+      <p class="hint reveal">Click any board to open it at full size.</p>
     </section>
 
-    <section class="section film interview" aria-labelledby="interview-title">
-      <h2 id="interview-title">Interview</h2>
+    <section class="wrap block reveal" aria-labelledby="interview-title">
+      <h2 id="interview-title"><span>03</span>Interview</h2>
       <video controls playsinline preload="none" poster="assets/interview-poster.jpg" aria-label="Lagoon Bar interview video">
         <source src="assets/interview.mp4" type="video/mp4">
         <a href="assets/interview.mp4">Watch the interview</a>
       </video>
     </section>
-    </div>
   </main>
-  <footer><a href="../work.html">← All work</a><a href="#project-top">Back to top</a></footer>
+
+  <footer class="wrap">
+    <div class="tape" aria-hidden="true"></div>
+    <div class="foot-row">
+      <a href="../work.html">← All work</a>
+      <a href="mailto:estellaaaning@gmail.com">estellaaaning@gmail.com</a>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      document.documentElement.classList.add('js');
+      const io = new IntersectionObserver((es) => es.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      }), { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+      els.forEach((el) => io.observe(el));
+    })();
+  </script>
 </body>
 </html>
