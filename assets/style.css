@@ -191,3 +191,8 @@ body.work .top { position: absolute; }
 @media (prefers-reduced-motion: reduce) {
   .rise, .reveal { animation: none; opacity: 1; transform: none; transition: none; }
 }
+
+/* copy deterrents */
+html, body { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+img, video { -webkit-user-drag: none; }
+@media print { body { display: none; } }
