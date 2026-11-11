@@ -49,15 +49,17 @@ h1 { margin: 0; font-family: var(--display); font-weight: 400; font-size: clamp(
 .desc { margin: 22px 0 0; max-width: 34em; font-size: clamp(16px, 1.3vw, 18px); color: #d2d2cc; }
 
 /* play button: crime-scene tape */
-.play { display: inline-flex; align-items: center; gap: 18px; margin-top: 32px; padding: 0 26px 0 0; background: var(--accent); color: #000; min-height: 60px; position: relative; transition: transform .2s, box-shadow .2s; }
-.play::before { content: ""; align-self: stretch; width: 44px; background: repeating-linear-gradient(-45deg, #000 0 9px, var(--accent) 9px 18px); border: 4px solid var(--accent); }
-.play-text, .play-sub { white-space: nowrap; }
-.play-text { font-family: var(--display); font-size: 30px; letter-spacing: 0.06em; line-height: 1; padding-top: 3px; }
-.play-sub { font-size: 13px; font-weight: 600; letter-spacing: 0.04em; border-left: 1.5px solid rgba(0, 0, 0, 0.55); padding-left: 16px; }
+.play { display: inline-flex; align-items: stretch; margin-top: 32px; height: 60px; background: var(--accent); color: #000; border: 3px solid var(--accent); transition: transform .2s, box-shadow .2s; }
+.play::before { content: ""; width: 26px; background: repeating-linear-gradient(-45deg, #000 0 7px, var(--accent) 7px 14px); }
+.play-text { display: flex; align-items: center; padding: 4px 26px 0 18px; font-family: var(--display); font-size: 30px; letter-spacing: 0.07em; line-height: 1; white-space: nowrap; }
+.play-go { display: grid; place-items: center; width: 54px; background: #000; color: var(--accent); }
+.play-go svg { transition: transform .25s cubic-bezier(.2, .7, .2, 1); }
 .play:hover { transform: translateY(-2px); box-shadow: 0 10px 34px rgba(255, 216, 44, 0.28); }
+.play:hover .play-go svg { transform: translateX(4px); }
 .play:focus-visible { outline-color: #fff; }
+.play-note { margin: 12px 0 0; font-size: 13px; letter-spacing: 0.04em; color: var(--muted); }
 
-.guide { margin-top: 18px; font-size: 14px; color: var(--muted); }
+.guide { margin-top: 10px; font-size: 14px; color: var(--muted); }
 .guide summary { cursor: pointer; width: fit-content; list-style: none; border-bottom: 1px solid var(--line); padding-bottom: 2px; }
 .guide summary::-webkit-details-marker { display: none; }
 .guide summary::after { content: " +"; }
@@ -99,10 +101,8 @@ footer { padding-bottom: 40px; }
   .site .name { font-size: 24px; }
   .site nav { gap: 18px; font-size: 13px; }
   .cover { width: 100%; }
-  .play { width: 100%; gap: 12px; padding-right: 14px; }
-  .play::before { width: 34px; }
-  .play-text { font-size: 25px; }
-  .play-sub { font-size: 12px; padding-left: 12px; }
+  .play { display: flex; }
+  .play-text { flex: 1; font-size: 27px; }
   .boards { gap: 10px; }
   h2 { font-size: 22px; }
   .facts > div { grid-template-columns: 80px 1fr; }
