@@ -11,7 +11,7 @@
   <meta property="og:image" content="https://estellaning.github.io/portfolio/assets/og.jpg">
   <link rel="preload" as="font" type="font/woff2" href="fonts/bebas-neue-400.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/outfit-400.woff2" crossorigin>
-  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="portfolio.css?v=20261112-contact">
 </head>
 <body>
   <a class="skip-link" href="#project">Skip to project</a>
@@ -21,6 +21,7 @@
     <nav>
       <a href="mailto:estellaaaning@gmail.com">estellaaaning@gmail.com</a>
       <a href="../work.html">All work</a>
+      <a href="#contact">Contact &amp; CV</a>
     </nav>
   </header>
 
@@ -39,18 +40,14 @@
         <h1>Lagoon Bar</h1>
         <p class="desc">A first-person psychological narrative game about selective memory and repressed family trauma. The player moves through a looping diner and a domestic suite across three stages of life, piecing together the truth behind a violent homicide.</p>
 
-        <a class="play" href="https://lagoon-bar.itch.io/lagoon-bar" target="_blank" rel="noopener">
+        <a class="play" title="Open Lagoon Bar on itch.io (new tab)" aria-describedby="play-note" href="https://lagoon-bar.itch.io/lagoon-bar" target="_blank" rel="noopener">
           <span class="play-text">Play the demo</span>
           <span class="play-go" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M4 12h15M13 5.5l6.5 6.5-6.5 6.5"/></svg>
           </span>
         </a>
-        <p class="play-note">itch.io · Windows · 6.5 GB</p>
+        <p class="play-note" id="play-note"><strong>Download on itch.io ↗</strong><br>Opens in a new tab · Windows · 6.5 GB</p>
 
-        <details class="guide">
-          <summary>How to download</summary>
-          <img src="assets/download-guide.webp" width="1440" height="1943" loading="lazy" decoding="async" alt="Lagoon Bar on itch.io: game description, screenshots and the download button.">
-        </details>
       </div>
 
       <dl class="facts">
@@ -62,14 +59,14 @@
     </section>
 
     <section class="wrap block reveal" aria-labelledby="trailer-title">
-      <h2 id="trailer-title"><span>01</span>Game trailer</h2>
+      <h2 id="trailer-title">Game trailer</h2>
       <video controls controlslist="nodownload noremoteplayback" disablepictureinpicture playsinline preload="none" poster="assets/trailer-poster.jpg" aria-label="Lagoon Bar promotional video">
         <source src="assets/trailer.mp4" type="video/mp4">
       </video>
     </section>
 
     <section class="wrap block" aria-labelledby="process-title">
-      <h2 id="process-title" class="reveal"><span>02</span>Design process</h2>
+      <h2 id="process-title" class="reveal">Design process</h2>
       <div class="boards">
         <button type="button" class="board reveal" data-full="assets/board-01.webp" aria-label="Enlarge design board 1"><img src="assets/board-01-2400.webp" width="2400" height="643" loading="lazy" decoding="async" alt="Lagoon Bar design process, board 1: game information and production timeline"></button>
         <button type="button" class="board reveal" data-full="assets/board-02.webp" aria-label="Enlarge design board 2"><img src="assets/board-02-2400.webp" width="2400" height="643" loading="lazy" decoding="async" alt="Lagoon Bar design process, board 2"></button>
@@ -85,10 +82,33 @@
     </section>
 
     <section class="wrap block reveal" aria-labelledby="interview-title">
-      <h2 id="interview-title"><span>03</span>Showcase &amp; player interview</h2>
+      <h2 id="interview-title">Showcase &amp; player interview</h2>
       <video controls controlslist="nodownload noremoteplayback" disablepictureinpicture playsinline preload="none" poster="assets/interview-poster.jpg" aria-label="Lagoon Bar showcase and player interview video">
         <source src="assets/interview.mp4" type="video/mp4">
       </video>
+    </section>
+    <section class="wrap contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">About &amp; contact</h2>
+      <div class="contact-grid">
+        <div class="contact-profile">
+          <p class="contact-kicker">Behind the project</p>
+          <h3>Yuxin Wang</h3>
+          <p class="contact-focus">Game design · Narrative · 3D environments</p>
+          <p class="contact-bio">My work on Lagoon Bar brings together narrative design, level design and 3D environment creation.</p>
+        </div>
+        <div class="contact-details">
+          <p class="contact-kicker">Get in touch</p>
+          <a class="contact-email" href="mailto:estellaaaning@gmail.com">estellaaaning@gmail.com <span aria-hidden="true">↗</span></a>
+          <p class="contact-note">For questions about my work, send me an email.</p>
+          <div class="contact-cv">
+            <div>
+              <h3>Curriculum vitae</h3>
+              <p>CV will be added soon.</p>
+            </div>
+            <span class="cv-status">Coming soon</span>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
