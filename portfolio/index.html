@@ -11,7 +11,7 @@
   <meta property="og:image" content="https://estellaning.github.io/portfolio/assets/og.jpg">
   <link rel="preload" as="font" type="font/woff2" href="fonts/bebas-neue-400.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/outfit-400.woff2" crossorigin>
-  <link rel="stylesheet" href="portfolio.css?v=20261112-minimal">
+  <link rel="stylesheet" href="portfolio.css?v=20261112-footer-layout">
 </head>
 <body>
   <a class="skip-link" href="#project">Skip to project</a>
@@ -90,17 +90,17 @@
 
   <footer class="wrap" id="contact">
     <div class="tape" aria-hidden="true"></div>
-    <div class="foot-row">
-      <a href="../work.html">← All work</a>
-      <a href="mailto:estellaaaning@gmail.com">estellaaaning@gmail.com</a>
-      <a href="#top">Back to top ↑</a>
-    </div>
-    <div class="footer-links" aria-label="Personal information">
-      <a href="../work.html#about">About</a>
-      <details class="footer-resume">
-        <summary>Resume</summary>
-        <p>Resume coming soon.</p>
-      </details>
+    <div class="footer-row">
+      <a class="footer-work" href="../work.html">← All work</a>
+      <nav class="footer-personal" aria-label="Personal information">
+        <a href="../work.html#about">About</a>
+        <details class="footer-resume">
+          <summary>Resume</summary>
+          <p>Resume coming soon.</p>
+        </details>
+        <a class="footer-email" href="mailto:estellaaaning@gmail.com">estellaaaning@gmail.com <span aria-hidden="true">↗</span></a>
+      </nav>
+      <a class="footer-top" href="#top" aria-label="Back to top">Back to top ↑</a>
     </div>
   </footer>
 
