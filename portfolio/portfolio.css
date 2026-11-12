@@ -57,7 +57,7 @@ h1 { margin: 0; font-family: var(--display); font-weight: 400; font-size: clamp(
 .play:hover { transform: translateY(-2px); box-shadow: 0 10px 34px rgba(255, 216, 44, 0.28); }
 .play:hover .play-go svg { transform: translateX(4px); }
 .play:focus-visible { outline-color: #fff; }
-.play-note { margin: 30px 0 10px; font-size: 17px; font-weight: 600; letter-spacing: 0.02em; color: var(--ink); }
+.play-note { margin: 36px 0 12px; font-size: clamp(20px, 1.8vw, 23px); font-weight: 600; line-height: 1.25; letter-spacing: 0; color: var(--ink); }
 
 .facts { margin: 0; border-top: 1px solid var(--line); }
 .facts > div { display: grid; grid-template-columns: 96px 1fr; gap: 16px; padding: 15px 0; border-bottom: 1px solid var(--line); }
