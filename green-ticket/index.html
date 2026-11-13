@@ -11,7 +11,7 @@
   <meta property="og:description" content="A short film about the fragile security of immigrant life. Film & production portfolio, UCLA 2025.">
   <meta property="og:image" content="https://estellaning.github.io/green-ticket/assets/cover-film.webp">
   <link rel="preload" as="font" type="font/ttf" href="assets/anton-400.ttf" crossorigin>
-  <link rel="stylesheet" href="green-ticket.css?v=20261113-pan">
+  <link rel="stylesheet" href="green-ticket.css?v=20261113-wheel">
 </head>
 <body>
   <a class="skip-link" href="#project">Skip to project</a>
@@ -57,11 +57,11 @@
     <div class="footer-row"><a href="../work.html">← All work</a><nav aria-label="Personal information"><a href="../work.html#about">About</a><a href="mailto:estellaaaning@gmail.com">estellaaaning@gmail.com</a></nav><a href="#top">Back to top ↑</a></div>
   </footer>
   <dialog id="lightbox" aria-label="Enlarged portfolio board">
-    <div class="lightbox-toolbar"><p id="board-label">Portfolio board</p><div><button type="button" id="zoom">Zoom in +</button><button type="button" id="close">Close ×</button></div></div>
-    <div class="lightbox-scroll" tabindex="0" role="region" aria-label="Portfolio image; scroll or drag when zoomed"><img alt=""></div>
-    <p class="lightbox-help">Zoom in, then drag or scroll to explore. Use Fit to screen to zoom out. Press Esc to close.</p>
+    <div class="lightbox-toolbar"><p id="board-label">Portfolio board</p><div class="zoom-controls"><button type="button" id="zoom-out" aria-label="Zoom out">−</button><input type="range" id="zoom-range" min="100" max="600" step="1" value="100" aria-label="Zoom level"><output id="zoom-value" for="zoom-range">100%</output><button type="button" id="zoom-in" aria-label="Zoom in">+</button><button type="button" id="zoom-fit">Fit to screen</button><button type="button" id="close">Close ×</button></div></div>
+    <div class="lightbox-scroll" tabindex="0" role="region" aria-label="Portfolio image; use the wheel to zoom and drag to move"><img alt=""></div>
+    <p class="lightbox-help">Scroll to zoom · Drag to move · Esc to close</p>
   </dialog>
-  <script src="green-ticket.js?v=20261113-pan"></script>
+  <script src="green-ticket.js?v=20261113-wheel"></script>
   <script src="../assets/protect.js"></script>
 </body>
 </html>
