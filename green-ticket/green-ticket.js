@@ -8,12 +8,12 @@
     zoom.textContent = zoomed ? 'Fit to screen −' : 'Zoom in +';
     zoom.setAttribute('aria-pressed', String(zoomed));
   };
-  document.querySelectorAll('.board').forEach(button => {
+  document.querySelectorAll('.board').forEach((button, index) => {
     button.addEventListener('click', () => {
       trigger = button;
       image.src = button.dataset.full;
       image.alt = button.querySelector('img').alt;
-      document.querySelector('#board-label').textContent = button.closest('figure').querySelector('figcaption span').textContent;
+      document.querySelector('#board-label').textContent = `Portfolio board ${index + 1}`;
       dialog.classList.remove('zoomed');
       zoom.textContent = 'Zoom in +';
       zoom.setAttribute('aria-pressed', 'false');
