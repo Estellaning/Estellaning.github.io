@@ -11,7 +11,8 @@
   <meta property="og:image" content="https://estellaning.github.io/portfolio/assets/og.jpg">
   <link rel="preload" as="font" type="font/woff2" href="fonts/bebas-neue-400.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/outfit-400.woff2" crossorigin>
-  <link rel="stylesheet" href="portfolio.css?v=20261113-headings">
+  <link rel="stylesheet" href="portfolio.css?v=20261113-viewer">
+  <link rel="stylesheet" href="lightbox.css?v=20261113-viewer">
 </head>
 <body>
   <a class="skip-link" href="#project">Skip to project</a>
@@ -103,26 +104,14 @@
     </div>
   </footer>
 
-  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Design board, enlarged">
-    <button type="button" class="lb-close" aria-label="Close">Close ×</button>
-    <div class="lb-scroll"><img alt=""></div>
-  </div>
+  <dialog id="lightbox" aria-label="Enlarged portfolio board">
+    <div class="lightbox-toolbar"><p id="board-label">Portfolio board</p><div class="zoom-controls"><button type="button" id="zoom-out" aria-label="Zoom out">−</button><input type="range" id="zoom-range" min="100" max="600" step="1" value="100" aria-label="Zoom level"><output id="zoom-value" for="zoom-range">100%</output><button type="button" id="zoom-in" aria-label="Zoom in">+</button><button type="button" id="zoom-fit">Fit to screen</button><button type="button" id="close">Close ×</button></div></div>
+    <div class="lightbox-scroll" tabindex="0" role="region" aria-label="Portfolio image; use the wheel to zoom and drag to move"><img alt=""></div>
+    <p class="lightbox-help">Scroll to zoom · Drag to move · Esc to close</p>
+  </dialog>
 
   <script src="../assets/protect.js"></script>
-  <script>
-    (() => {
-      const lb = document.getElementById('lightbox'), img = lb.querySelector('img');
-      let last = null;
-      const close = () => { lb.hidden = true; lb.classList.remove('zoom'); img.removeAttribute('src'); document.body.style.overflow = ''; if (last) last.focus(); };
-      document.querySelectorAll('.board').forEach((b) => b.addEventListener('click', () => {
-        last = b; img.src = b.dataset.full; img.alt = b.querySelector('img').alt;
-        lb.hidden = false; document.body.style.overflow = 'hidden'; lb.querySelector('.lb-close').focus();
-      }));
-      img.addEventListener('click', (e) => { e.stopPropagation(); lb.classList.toggle('zoom'); });
-      lb.addEventListener('click', close);
-      document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !lb.hidden) close(); });
-    })();
-  </script>
+  <script src="../assets/portfolio-viewer.js?v=20261113-shared"></script>
   <script>
     (() => {
       const els = document.querySelectorAll('.reveal');

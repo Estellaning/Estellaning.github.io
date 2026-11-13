@@ -1,0 +1,41 @@
+#lightbox {
+  position: fixed; inset: 0; width: 100vw; height: 100dvh;
+  max-width: none; max-height: none; padding: 0; border: 0;
+  background: var(--bg); color: var(--ink);
+}
+#lightbox[open] { display: flex; flex-direction: column; }
+#lightbox::backdrop { background: #000d; }
+.lightbox-toolbar {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 16px; padding: 14px 24px; border-bottom: 1px solid var(--line);
+}
+.lightbox-toolbar p { margin: 0; font-size: 14px; }
+.zoom-controls { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.lightbox-toolbar button {
+  font: 400 13px var(--body); padding: 9px 16px; border: 1px solid var(--line);
+  background: #101010; color: var(--ink); cursor: pointer; white-space: nowrap;
+}
+.lightbox-toolbar button:hover { border-color: var(--accent); }
+.lightbox-toolbar button:disabled { opacity: .35; cursor: default; }
+.zoom-controls input { width: 120px; accent-color: var(--accent); }
+.zoom-controls output { min-width: 48px; text-align: center; font-size: 13px; font-variant-numeric: tabular-nums; }
+.lightbox-toolbar button:focus-visible, .zoom-controls input:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 4px;
+}
+.lightbox-scroll {
+  overflow: auto; flex: 1; min-height: 0; align-content: safe center;
+  scrollbar-gutter: stable; overscroll-behavior: contain; touch-action: pan-x pan-y pinch-zoom;
+}
+.lightbox-scroll img { display: block; width: 100%; max-width: none; cursor: zoom-in; }
+.zoomed .lightbox-scroll img { cursor: grab; user-select: none; -webkit-user-drag: none; }
+.zoomed .lightbox-scroll.dragging, .zoomed .lightbox-scroll.dragging img { cursor: grabbing; }
+.lightbox-help { padding: 12px 24px; font-size: 12px; color: var(--muted); margin: 0; border-top: 1px solid var(--line); }
+@media (max-width: 600px) {
+  .lightbox-toolbar { padding: 12px; flex-wrap: wrap; }
+  .lightbox-toolbar p { display: none; }
+  .zoom-controls { gap: 8px; width: 100%; }
+  .zoom-controls input { width: 70px; min-width: 40px; flex: 1; }
+  .zoom-controls output { min-width: 40px; }
+  .lightbox-toolbar button { font-size: 12px; padding: 8px 10px; }
+  .lightbox-help { padding: 12px; font-size: 11px; }
+}
